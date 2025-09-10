@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Color Prediction Game v2.0</title>
+  <title>Color Prediction Game v2.0 + AI</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <div class="app">
     <header>
-      <h1>COLOR PREDICTION GAME <span class="version">v2.0</span></h1>
+      <h1>COLOR PREDICTION GAME <span class="version">v2.0 + AI</span></h1>
       <div class="meta">
         <div>Server: <a id="serverUrl" href="https://www.tashanwin27.com/#/main" target="_blank">https://www.tashanwin27.com/#/main</a></div>
         <div>Game UID: <span id="gameUid">1969524</span></div>
@@ -20,6 +20,7 @@
       <section class="menu">
         <button id="btnPredict">Predict next result</button>
         <button id="btnAddResult">Add new result</button>
+        <button id="btnTrainModel">Train AI Model</button>
         <button id="btnConnect">Connect to server</button>
         <button id="btnStats">Show statistics</button>
         <button id="btnHistory">View historical data</button>
@@ -37,7 +38,7 @@
     </main>
 
     <footer>
-      <small>Converted from a Termux bash script — runs locally in your browser.</small>
+      <small>Converted from a Termux bash script — runs locally in your browser. AI model is client-side only.</small>
     </footer>
   </div>
 
