@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Color Prediction Game v2.0</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>COLOR PREDICTION GAME <span class="version">v2.0</span></h1>
+      <div class="meta">
+        <div>Server: <a id="serverUrl" href="https://www.tashanwin27.com/#/main" target="_blank">https://www.tashanwin27.com/#/main</a></div>
+        <div>Game UID: <span id="gameUid">1969524</span></div>
+      </div>
+    </header>
+
+    <main>
+      <section class="menu">
+        <button id="btnPredict">Predict next result</button>
+        <button id="btnAddResult">Add new result</button>
+        <button id="btnConnect">Connect to server</button>
+        <button id="btnStats">Show statistics</button>
+        <button id="btnHistory">View historical data</button>
+        <button id="btnReset">Reset storage</button>
+      </section>
+
+      <section id="panel" class="panel">
+        <!-- Dynamic content injected by JS -->
+      </section>
+
+      <aside class="log">
+        <h3>Log</h3>
+        <div id="logArea"></div>
+      </aside>
+    </main>
+
+    <footer>
+      <small>Converted from a Termux bash script — runs locally in your browser.</small>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
